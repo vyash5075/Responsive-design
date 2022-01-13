@@ -26,7 +26,7 @@
   position: sticky;
 }
 .nav-list {
-  width: 50%;
+  width: 70%;
 
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@
 }
 
 .rightNav {
-  width: 50%;
+  width: 30%;
   text-align: right;
   padding: 0 23px;
 }
@@ -199,4 +199,44 @@
   color: white;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
+}
+.burger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+  display: none;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+@media only screen and (max-width: 1140px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+
+  .rightNav {
+    text-align: center;
+  }
+  #search {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .burger {
+    display: block;
+  }
+  .h-nav {
+    height: 75px;
+  }
+
+  .v-class {
+    opacity: 0;
+  }
 }
